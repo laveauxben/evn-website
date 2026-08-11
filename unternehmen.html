@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Energie Vision Nord GmbH - Unternehmen</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/EVN-Logo-sand-dunkelgrau-64x64-ohne-name.png">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="company-hero container">
+      <div class="company-hero__content">
+        <p class="eyebrow">Unternehmen</p>
+        <h1>Wir verbinden Erfahrung, Technik und Verantwortung.</h1>
+        <p>Bei Energie Vision Nord entwickeln wir individuelle Energielösungen für Neubau, Sanierung und Betrieb – von der Planung bis zur Umsetzung.</p>
+        <div class="hero-actions">
+          <a class="btn" href="kontakt.html">Kontakt aufnehmen</a>
+          <a class="btn alt" href="Leistungen.html">Unsere Leistungen</a>
+        </div>
+      </div>
+      <div class="company-hero__card">
+        <h2>Warum Kunden uns wählen</h2>
+        <ul class="company-list">
+          <li>Individuelle Planung für privat und gewerblich</li>
+          <li>Hohe Qualität, saubere Ausführung und zuverlässige Abwicklung</li>
+          <li>Persönliche Betreuung von der ersten Beratung bis zur Abnahme</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stats container">
+      <div class="stats-grid">
+        <article class="stats-card">
+          <h3>6274</h3>
+          <p>Zufriedene Kunden und Kundinnen</p>
+        </article>
+        <article class="stats-card">
+          <h3>65+</h3>
+          <p>Jahre Erfahrung im Handwerk</p>
+        </article>
+        <article class="stats-card">
+          <h3>20+</h3>
+          <p>Motivierte Mitarbeiter &amp; Mitarbeiterinnen</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="company-overview container">
+      <div class="company-grid">
+        <article class="company-card">
+          <h2>Über uns</h2>
+          <p>Energie Vision Nord steht für nachhaltige und zuverlässige Energielösungen. Wir planen, projektieren und realisieren Wärmepumpen, Heizung, Lüftung, Sanitär und Solaranlagen mit regionaler Verantwortung.</p>
+          <p>Von der ersten Beratung über die Planung bis zur fertigen Umsetzung begleiten wir unsere Kunden und Kundinnen mit hoher Fachkompetenz, sorgfältiger Ausführung und klarer Kommunikation.</p>
+        </article>
+        <article class="company-card">
+          <h2>Unsere Mission</h2>
+          <p>Wir schaffen moderne und zukunftsorientierte Gebäude- und Energiesysteme, die wirtschaftlich, effizient und langfristig zuverlässig sind.</p>
+          <ul class="company-list">
+            <li>Nachhaltige Technik mit wirtschaftlichem Nutzen</li>
+            <li>Verlässliche Umsetzung von Projekten jeder Größe</li>
+            <li>Klare Kommunikation und individuelle Betreuung</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="company-overview container">
+      <div class="company-grid">
+        <article class="company-card company-card--highlight">
+          <h2>Unsere Werte</h2>
+          <ul class="company-list">
+            <li>Verlässlichkeit und saubere Ausführung in jedem Projekt</li>
+            <li>Individuelle Lösungen für Neubau, Sanierung und Betrieb</li>
+            <li>Nachhaltigkeit und Effizienz im Fokus jeder Planung</li>
+          </ul>
+        </article>
+        <article class="company-card">
+          <h2>So arbeiten wir</h2>
+          <p>Wir arbeiten eng mit Kunden und Kundinnen zusammen, nehmen technische Anforderungen ernst und setzen Projekte termingerecht und fachlich sauber um.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="company-overview container">
+      <div class="company-grid">
+        <article class="company-card">
+          <div class="bild">
+            <img src="img/B07.jpg" alt="Energie Vision Nord Team">
+          </div>
+          <h2>Unser Team</h2>
+          <p>Unser Team vereint erfahrene Fachleute aus den Bereichen Technik, Beratung und Kundendienst. Gemeinsam arbeiten wir daran, Ihre Projekte professionell und termingerecht umzusetzen.</p>
+          <ul class="company-list">
+            <li>Technik- und Projektplanung aus einer Hand</li>
+            <li>Beratung rund um Effizienz und Nachhaltigkeit</li>
+            <li>Service nach der Fertigstellung des Projekts</li>
+          </ul>
+        </article>
+        <article class="company-card">
+          <div class="bild">
+            <img src="img/B02.jpg" alt="Energie Vision Nord Projekte">
+          </div>
+          <h2>Erfolgreiche Projekte</h2>
+          <p>Von Wärmepumpen über Lüftungs- und Solar-Lösungen bis hin zu kompletten Sanierungen begleiten wir Kunden zuverlässig bei anspruchsvollen Projekten.</p>
+          <ul class="company-list">
+            <li>Neubau- und Modernisierungsprojekte</li>
+            <li>Effiziente Lösungen für Wohnen und Gewerbe</li>
+            <li>Starke Referenzen durch hochwertige Ausführung</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="script.js"></script>
+
+  <button id="backToTop">↑</button>
+
+  <script>
+    const b = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        b.classList.add("show");
+      } else {
+        b.classList.remove("show");
+      }
+    });
+
+    b.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Energie Vision Nord GmbH- Wärmepumpen & Sanitär</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/EVN-Logo-sand-dunkelgrau-64x64-ohne-name.png">
+</head>
+<body>
+<main>
+  <div id="header"></div>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Energie Vision Nord</h1>
+        <p class="lead">Wir sind Ihre Energie‑Visionäre – kompetent und zuverlässig in den Bereichen Wärmepumpen, Heizung, Lüftung, Sanitär und Solar.</p>
+        <a class="btn" href="kontakt.html">Angebot anfordern</a>
+      </div>
+    </section>
+  </main>
+
+<div id="footer"></div>
+
+  <script src="script.js"></script>
+
+  <!-- back to top button -->
+<button id="backToTop">↑</button>
+
+<script>
+  const b = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      b.classList.add("show");
+    } else {
+      b.classList.remove("show");
+    }
+  });
+
+  b.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>

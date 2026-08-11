@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Energie Vision Nord GmbH - Wärmepumpen & Sanitär</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/EVN-Logo-sand-dunkelgrau-64x64-ohne-name.png">
+</head>
+<body>
+  
+  <main>
+    <div id="header"></div>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Energie Vision Nord</h1>
+        <p class="lead">Wir sind Ihre Energie‑Visionäre – kompetent und zuverlässig in den Bereichen Wärmepumpen, Heizung, Lüftung, Sanitär und Solar.</p>
+        <a class="btn" href="kontakt.html">Angebot anfordern</a>
+      </div>
+    </section>
+
+    <section id="projekte" class="container projekte">
+      <h2>Referenzprojekte</h2>
+      
+      <!-- Projekt-Slider -->
+      <div class="project-slider">
+        <div class="slider-container">
+          <div class="slider-content">
+            <!-- Slide 1 -->
+            <div class="slider-item active">
+              <div class="slider-image">
+                <img src="img/B05.jpg" alt="Klinikprojekt - technische Installation">
+              </div>
+              <div class="slider-text">
+                <h3>Klinikprojekt</h3>
+                <p>Umrüstung der Warmwasserbereitung auf hocheffiziente Wärmepumpentechnik mit integriertem Hygienesystem. Das Projekt umfasst die Installation von 4 Wärmepumpen zur zentralen Wärmeversorgung.</p>
+                <ul>
+                  <li>Leistung: 120 kW</li>
+                  <li>Einsparung: 45% Energiekosten</li>
+                  <li>Dauer: 6 Wochen</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slider-item">
+              <div class="slider-image">
+                <img src="img/B07.jpg" alt="Wohnkomplex - moderne Wohnanlage">
+              </div>
+              <div class="slider-text">
+                <h3>Wohnkomplex</h3>
+                <p>Zentrale Heizungs- und Brauchwasseranlage für einen modernen Wohnkomplex mit 24 Wohneinheiten. Smart Management System für optimierte Energieverteilung.</p>
+                <ul>
+                  <li>Leistung: 150 kW</li>
+                  <li>Wohneinheiten: 24</li>
+                  <li>Effizienzklasse: A+++</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slider-item">
+              <div class="slider-image">
+                <img src="img/B10.jpg" alt="Gewerbebau - moderne Büro- oder Industrieanlage">
+              </div>
+              <div class="slider-text">
+                <h3>Gewerbebau</h3>
+                <p>Komplettlösung für einen Gewerbebau mit Heizung, Lüftung und Warmwasserbereitung. Integration von Solarpanels für zusätzliche Wärmeerzeugung.</p>
+                <ul>
+                  <li>Leistung: 200 kW</li>
+                  <li>Solar-Integration: 30 kWp</li>
+                  <li>CO₂-Reduktion: 55 Tonnen/Jahr</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slider-item">
+              <div class="slider-image">
+                <img src="img/B12.jpg" alt="Sanierungsprojekt - Altbau oder Modernisierung">
+              </div>
+              <div class="slider-text">
+                <h3>Sanierungsprojekt</h3>
+                <p>Modernisierung eines älteren Mehrfamilienhauses mit neuer Wärmepumpenanlage und Fußbodenheizung. Umfangreiche Sanierungsmaßnahmen für optimale Energieeffizienz.</p>
+                <ul>
+                  <li>Leistung: 85 kW</li>
+                  <li>Fußbodenheizung: 1.200 m²</li>
+                  <li>Energieeinsparung: 60%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button class="slider-nav prev" aria-label="Vorheriges Projekt">❮</button>
+          <button class="slider-nav next" aria-label="Nächstes Projekt">❯</button>
+        </div>
+
+        <!-- Dots/Indicators -->
+        <div class="slider-dots">
+          <button class="dot active" data-slide="0"></button>
+          <button class="dot" data-slide="1"></button>
+          <button class="dot" data-slide="2"></button>
+          <button class="dot" data-slide="3"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="script.js"></script>
+
+  
+<!-- back to top button -->
+<button id="backToTop">↑</button>
+
+<script>
+  const b = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      b.classList.add("show");
+    } else {
+      b.classList.remove("show");
+    }
+  });
+
+  b.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>

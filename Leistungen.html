@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>Energie Vision Nord GmbH- Wärmepumpen & Sanitär</title>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="icon" href="img/EVN-Logo-sand-dunkelgrau-64x64-ohne-name.png">
+</head>
+<body>
+ <div id="header"></div>
+ <main>
+   <section class="hero container">
+     <div class="hero-left">
+       <p class="eyebrow">Leistungen</p>
+       <h1>Energie Vision Nord</h1>
+       <p class="lead">Wir sind Ihre Energie‑Visionäre – kompetent und zuverlässig in den Bereichen Wärmepumpen, Heizung, Lüftung, Sanitär und Solar.</p>
+       <a class="btn" href="kontakt.html">Angebot anfordern</a>
+     </div>
+   </section>
+
+   <section id="leistungen" class="container leistungen">
+     <h2>Unsere Leistungen</h2>
+     <div class="cards">
+       <div class="card">
+         <h3>Wärmepumpe &amp; Heizung</h3>
+         <img src="img/warmepumpe.jpg" alt="Wärmepumpe &amp; Heizung" class="service-image">
+         <p>Planung und Umsetzung von effizienten Wärmepumpen- und Heizungsanlagen für Neubau und Sanierung.</p>
+       </div>
+       <div class="card">
+         <h3>Sanitär</h3>
+         <img src="img/sanitär.jpg" alt="Sanitär" class="service-image">
+         <p>Komplette Sanitärlösungen inkl. Brauchwasseraufbereitung und Hygiene-Konzepte für Gebäude.</p>
+       </div>
+       <div class="card">
+         <h3>Lüftung</h3>
+         <img src="img/Lüftung.png" alt="Lüftung" class="service-image">
+         <p>Kontrollierte Lüftungssysteme mit Wärmerückgewinnung für mehr Komfort und Energieeffizienz.</p>
+       </div>
+       <div class="card">
+         <h3>Solar</h3>
+         <img src="img/Solar.png" alt="Solar" class="service-image">
+         <p>Integration von Solarthermie und PV in das Energiesystem zur Senkung der Betriebskosten.</p>
+       </div>
+       <div class="card">
+         <h3>Wartung &amp; Service</h3>
+         <img src="img/wartung &amp; service.jpg" alt="Wartung &amp; Service" class="service-image">
+         <p>Regelmäßige Inspektionen, Hygienespülungen und schneller Kundendienst.</p>
+       </div>
+     </div>
+   </section>
+ </main>
+
+ <div id="footer"></div>
+
+ <script src="script.js"></script>
+
+ <button id="backToTop">↑</button>
+
+ <script>
+   const b = document.getElementById("backToTop");
+
+   window.addEventListener("scroll", () => {
+     if (window.scrollY > 200) {
+       b.classList.add("show");
+     } else {
+       b.classList.remove("show");
+     }
+   });
+
+   b.addEventListener("click", () => {
+     window.scrollTo({ top: 0, behavior: "smooth" });
+   });
+ </script>
+</body>
+</html>

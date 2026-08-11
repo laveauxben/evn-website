@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Energie Vision Nord GmbH- Wärmepumpen & Sanitär</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/EVN-Logo-sand-dunkelgrau-64x64-ohne-name.png">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <p class="eyebrow">Energie Vision Nord</p>
+        <h1>Saubere Lösungen für moderne Gebäude.</h1>
+        <p class="lead">Wir sind Ihre Energie‑Visionäre – kompetent und zuverlässig in den Bereichen Wärmepumpen, Heizung, Lüftung, Sanitär, Klima und Solar.</p>
+        <div class="hero-actions">
+          <a class="btn" href="kontakt.html">Angebot anfordern</a>
+          <a class="btn alt" href="Leistungen.html">Unsere Leistungen</a>
+        </div>
+      </div>
+      <div class="hero-highlight">
+        <h2>Professionell geplant. Zuverlässig umgesetzt.</h2>
+        <ul>
+          <li>Individuelle Lösungen für Neubau und Sanierung</li>
+          <li>Wärmepumpen, Lüftung, Solar und Sanitär aus einer Hand</li>
+          <li>Persönliche Betreuung von der Planung bis zur Abnahme</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="index" class="container index">
+      <div class="feature-grid">
+        <article class="feature-card feature-card--image">
+          <img src="img/B07.jpg" alt="Team von Energie Vision Nord">
+          <div class="feature-card__content">
+            <p class="eyebrow">Unternehmen</p>
+            <h2>Erfahrung, Kompetenz und Verantwortung</h2>
+            <p>Mit über 65 Jahren Erfahrung, einem engagierten Team und einem klaren Fokus auf Qualität und Nachhaltigkeit begleiten wir Neubau und Sanierung von der ersten Beratung bis zur Abnahme.</p>
+            <a class="btn alt" href="unternehmen.html">Mehr über EVN</a>
+          </div>
+        </article>
+
+        <article class="feature-card feature-card--image">
+          <img src="img/B02.jpg" alt="Projektfoto von Energie Vision Nord">
+          <div class="feature-card__content">
+            <p class="eyebrow">Leistungen &amp; Projekte</p>
+            <h2>Wärmepumpen, Lüftung, Sanitär und Solar aus einer Hand</h2>
+            <p>Unsere Teams planen und realisieren individuelle Lösungen für Wohn- und Gewerbeprojekte – zuverlässig, sauber und mit Blick auf langfristige Effizienz.</p>
+            <div class="hero-actions">
+              <a class="btn alt" href="Leistungen.html">Leistungen ansehen</a>
+              <a class="btn alt" href="Projekte.html">Referenzen ansehen</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="script.js"></script>
+
+  <button id="backToTop">↑</button>
+
+  <script>
+    const b = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        b.classList.add("show");
+      } else {
+        b.classList.remove("show");
+      }
+    });
+
+    b.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

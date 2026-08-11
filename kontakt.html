@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Energie Vision Nord GmbH - Wärmepumpen & Sanitär</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/EVN-Logo-sand-dunkelgrau-64x64-ohne-name.png">
+</head>
+<body>
+ <main>
+    <div id="header"></div>
+    <section id="kontakt" class="container kontakt">
+      <h2>Kontakt</h2>
+      <p>Schreiben Sie uns oder rufen Sie an. Adressen und Telefonnummern sind unserer Website entnommen.</p>
+      <p>Schreiben Sie unteranderem in den Betreff aus welcher Regien sie kommen, weil wir nur in bestimmten Regionen nur Arbeiten</p>
+      <div class="contact-grid">
+        <form id="contactForm" class="card form" method="POST" action="sendmail.php">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Ihr Name" required>
+          <label for="email">E-Mail</label>
+          <input id="email" name="email" type="email" placeholder="name@beispiel.de" required>
+          <label for="phone">Telefon</label>
+          <input id="phone" name="phone" type="text" placeholder="Telefon (optional)">
+          <label for="subject">Betreff</label>
+          <input id="subject" name="subject" type="text" placeholder="Betreff Ihrer Anfrage" required>
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="6" placeholder="Ihre Anfrage..." required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Absenden</button>
+            <button type="button" id="netlifyButton" class="btn alt">Netlify-Form testen</button>
+          </div>
+        </form>
+        <div class="card contact-info">
+          <h3>Adresse & Kontakt</h3>
+          <p><strong>Energie Vision Nord GmbH</strong><br>Lübecker Straße 34, 22949 Ammersbek</p>
+          <p><strong>Weitere Adresse:</strong><br>Mühlenstraße 2, 18258 Schwaan</p>
+          <div class="phone-info"><p>Fon: <a href="tel:+494057227651">+49 40 5722 7651</a><br>Kundendienst-Notruf: <a href="tel:+491606134401">+49 160 6134 401</a></p></div>
+          <p>E‑Mail: info@ev-n.de</p>
+        </div>
+      </div>
+      <p class="small">Hinweis: Das Formular sendet per PHP (sendmail.php) auf Servern mit PHP-Mailfunktion. Alternativ kann das Netlify-Formular verwendet werden (statisch).</p>
+    </section>
+
+  </main>
+
+<div id="footer"></div>
+
+  <script src="script.js"></script>
+
+  
+<!-- back to top button -->
+<button id="backToTop">↑</button>
+
+<script>
+  const b = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      b.classList.add("show");
+    } else {
+      b.classList.remove("show");
+    }
+  });
+
+  b.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>
